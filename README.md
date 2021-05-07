@@ -1,3 +1,2 @@
-# js-strategy
+# Strategy Pattern (feat. Javascript)
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-strategy)
