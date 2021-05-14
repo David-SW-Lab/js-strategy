@@ -1,29 +1,27 @@
-const path = require("path");
+const path = require('path');
 
-const sourcePath = path.resolve(__dirname, "./src");
+const sourcePath = path.resolve(__dirname, './src');
 
 module.exports = env => ({
-  mode: "development",
-  entry: path.join(sourcePath, "initialize.js"),
+  mode: 'development',
+  entry: path.join(sourcePath, 'initialize.js'),
   output: {
-    filename: "Strategy.js"
+    filename: 'Strategy.js'
   },
   module: {
     rules: [
       {
         include: sourcePath,
-        exclude: ["/node_modules"],
-        loader: "babel-loader"
+        exclude: ['/node_modules']
       }
     ]
   },
-  target: "node",
+  target: 'node',
   resolve: {
-    modules: [sourcePath, "node_modules"],
+    modules: [sourcePath, 'node_modules'],
     alias: {
-      duckScript: path.resolve(__dirname, "src", "duck", env.PLATFORM)
+      duckScript: path.resolve(__dirname, 'src', 'duck', env.PLATFORM)
     },
-    extensions: [".json", ".js"]
-  },
-  devtool: "source-map"
+    extensions: ['.json', '.js']
+  }
 });
