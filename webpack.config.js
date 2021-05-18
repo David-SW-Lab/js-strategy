@@ -19,9 +19,6 @@ module.exports = env => ({
   target: 'node',
   resolve: {
     modules: [sourcePath, 'node_modules'],
-    alias: {
-      duckScript: path.resolve(__dirname, 'src', 'duck', env.PLATFORM)
-    },
     extensions: ['.json', '.js']
   }
 });
