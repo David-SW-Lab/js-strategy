@@ -8,11 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "build:redheadDuck": "webpack --env.PLATFORM=redheadDuck",
-    "build:mallardDuck": "webpack --env.PLATFORM=mallardDuck",
-    "build:rubberDuck": "webpack --env.PLATFORM=rubberDuck",
+    "build": "webpack",
     "watch": "webpack -w",
-    "prepare": "npm run build:mallardDuck",
+    "prepare": "npm run build",
     "package": "pkg -t node10-win-x64 ./dist/Strategy.js"
   },
   "author": "tae1109.lee <tae1109.lee@samsung.com>",
